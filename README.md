@@ -1,3 +1,3 @@
 # codewars-solution
 
-www.codewars.com/syzwnftr
+www.codewars.com/users/syzwnftr
