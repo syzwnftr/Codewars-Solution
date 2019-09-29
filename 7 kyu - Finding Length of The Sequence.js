@@ -3,10 +3,10 @@ function lengthOfSequence(arr, n) {
 	let lastIndex = arr.lastIndexOf(n);
 	const nArr = arr.filter(num => num === n);
 
-	if(nArr.length > 2) {
-		return 0;
+	if(nArr.length === 2) {
+		return (lastIndex - firstIndex) + 1;
 	} else {
-		return (lastIndex - firstIndex) + 1
+		return 0;
 	}
 }
 
