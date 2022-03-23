@@ -16,4 +16,4 @@ Examples
 
 function swap(str){
     return str.split('').map(letter => letter === letter.toUpperCase() ? letter.toLowerCase() : letter.toUpperCase()).join('')
-  }
+}
