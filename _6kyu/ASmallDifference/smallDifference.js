@@ -38,3 +38,26 @@ const oneCharDifference = (s1, s2) => {
     
     return diff === 1;
 };
+
+
+// preferred solution
+function oneCharDifference(s1, s2) {
+  let diff = 0;
+  let longerWord = (s1.length > s2.length) ? s1 : s2;
+  let shorterWord = (s1.length > s2.length) ? s2 : s1;
+
+  for(let i = 0; i < longerWord.length;) {
+    if(longerWord[i] !== shorterWord[i]) {
+      diff++;
+
+      if(longerWord.length !== shorterWord.length) {
+        longerWord = longerWord.slice(0, i).concat(longerWord.slice(i + 1));
+        i = 0;
+        continue;
+      }
+    }
+
+    i++;
+  }
+  return diff === 1;
+}
