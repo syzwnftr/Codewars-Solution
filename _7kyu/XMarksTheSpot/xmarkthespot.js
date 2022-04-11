@@ -58,9 +58,12 @@ Example test cases:
 function xMarksTheSpot(input) {
     const result = [];
    
+    // convert 2d array into 1d
     const merged = input.reduce((currentArr, nextArr) => currentArr.concat(nextArr), []);
 
+    // check if the converted array includes 'x'
     if(merged.includes('x') === true) {
+        // the number of 'x' in the array
         let howManyX = merged.filter(char => char === 'x').length;
        
         if(howManyX !== 1) {
@@ -76,7 +79,5 @@ function xMarksTheSpot(input) {
             }   
         }
     }
-
-    return result;
-    
+    return result;  
 }
