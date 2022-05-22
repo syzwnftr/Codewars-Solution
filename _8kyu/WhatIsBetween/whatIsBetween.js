@@ -9,6 +9,13 @@ a = 1
 b = 4
 --> [1, 2, 3, 4]
 
-
-
 */
+
+function between(a, b) {
+    const arr = [];
+    for(let i = a; i <= b; i++) {
+        arr.push(i);
+    }
+    return arr;
+}
+
