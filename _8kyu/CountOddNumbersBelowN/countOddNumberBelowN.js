@@ -13,3 +13,18 @@ Expect large Inputs!
 function oddCount(n){
     return Math.floor(n/2);
 }
+
+// DO NOT USE THIS SOLUTION 
+// This solution will only work on small int
+// Big int will make it out of memory
+function oddCount(n){
+    let count = 0;
+    for(let i = 0; i < n; i++) {
+        if(i % 2 !== 0) {
+            count++
+        }
+    }
+    return count;
+}
+
+
