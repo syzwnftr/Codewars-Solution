@@ -26,3 +26,16 @@ function isIsogram(str){
 }
 
 
+
+function isIsogram(str){
+    if(str === '') return true;
+    let result = true;
+    const strObj = {};
+    for(let i = 0; i < str.length; i++) {
+       (strObj[str[i].toLowerCase()] === undefined) ? strObj[str[i].toLowerCase()] = 1 : false;
+    }
+    
+    return result;
+}
+
+
