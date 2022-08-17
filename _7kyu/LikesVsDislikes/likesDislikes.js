@@ -34,7 +34,7 @@ function likeOrDislike(buttons) {
 }
 
 
-// alt:
+//alt:
 const likeOrDislike = (buttons) => {
     return buttons.reduce((state, button) => state === button ? state = 'Nothing' : state = button, 'Nothing');
 }
