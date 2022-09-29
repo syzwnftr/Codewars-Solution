@@ -62,7 +62,7 @@ const pendulum = (values) => {
     const min = Math.min(...values);
     values.splice(values.indexOf(min), 1);
     const asc = [...values].sort((a,b) => a - b);
-    const result = [min]
+    const result = [min];
 
     asc.forEach((num, i) => {
         if(i % 2 === 0) {
@@ -75,5 +75,5 @@ const pendulum = (values) => {
     return result;
 }
 
-console.log(pendulum([1,2,3,4,5,6,7,8]));
+
 
